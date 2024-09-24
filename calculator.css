@@ -1,0 +1,88 @@
+* {
+  transition: all 0.5s;
+  font-family: "work-sans", sans-serif;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+main {
+  background-color: #17171c;
+  width: 35rem;
+  height: 38rem;
+  position: relative;
+  border: solid 2.5px #6e7dfc;
+  box-shadow: 0px 0px 30px 10px #6e7cfc6c;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17171c;
+  /*background-image: url("backgroun-calculator.jpg");
+  backdrop-filter: blur(10px) grayscale(80%) contrast(1.4);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(101, 179, 231),
+    rgb(242, 66, 248)
+  );
+  */
+}
+header div {
+  background-color: #2e2f38;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.3rem 1px;
+  border-radius: 30px;
+  margin-top: 1rem;
+}
+.toggle button {
+  background-color: transparent;
+  border: none;
+}
+.work button {
+  width: 8rem;
+  height: 4rem;
+  font-size: 25px;
+  background-color: #2e2f38;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+.grid {
+  display: inline;
+}
+.btns {
+  display: grid;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  margin-left: 1rem;
+}
+.number-picker input {
+  width: 32rem;
+  background-color: inherit;
+  height: 5rem;
+  border: none;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 40px;
+  text-align: right;
+}
+.number-picker {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.grid:first-child button {
+  background-color: #4e505f;
+}
+.grid button:last-child {
+  background-color: #4b5efc;
+}
+.grid button:hover {
+  background-color: inherit;
+  border: solid 1px #6d7bfc;
+}

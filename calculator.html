@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <header>
+          <div class="toggle">
+            <button><img src="O.png" alt="img" /></button>
+            <button><img src="Union.png" /></button>
+          </div>
+        </header>
+      </div>
+
+      <section class="work">
+        <div class="number-picker">
+          <input type="text" class="number-input1" readonly />
+          <input type="text" class="number-input" disabled />
+        </div>
+
+        <div class="btns">
+          <div class="buttons grid five">
+            <button class="number-button clear" data-number="C">C</button>
+            <button class="number-button" data-number="+/-">+/-</button>
+            <button class="number-button" data-number="%">%</button>
+            <button class="number-button" data-number="/">÷</button>
+          </div>
+          <div class="grid four">
+            <button class="number-button" data-number="7">7</button>
+            <button class="number-button" data-number="8">8</button>
+            <button class="number-button" data-number="9">9</button>
+            <button class="number-button" data-number="*">x</button>
+          </div>
+          <div class="grid three">
+            <button class="number-button" data-number="4">4</button>
+            <button class="number-button" data-number="5">5</button>
+            <button class="number-button" data-number="6">6</button>
+            <button class="number-button" data-number="-">-</button>
+          </div>
+
+          <div class="grid two">
+            <button class="number-button" data-number="1">1</button>
+            <button class="number-button" data-number="2">2</button>
+            <button class="number-button" data-number="3">3</button>
+            <button class="number-button" data-number="+">+</button>
+          </div>
+          <div class="grid one">
+            <button class="number-button" data-number="0">0</button>
+            <button class="number-button" data-number=".">.</button>
+            <button
+              class="number-button erase"
+              data-number="erase"
+              id="backspace"
+            >
+              <img src="👀 Icon.png" />
+            </button>
+            <button class="number-button equal" data-number="=">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
